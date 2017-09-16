@@ -1,0 +1,27 @@
+What left to do:
+
+    - Profile system, DONE
+    - Saving to profile, DONE
+    - Show saves on Profile such as in a tab, DONE
+
+    - Heart updating database numbers, DONE
+    - Fix download button not downloading the correct image, DONE
+
+    - Create a image, should at least allow: DONE
+        - Positioning and adding of text, DONE
+        - Cropping, DONE
+        - Directly downloading, DONE
+        - Uploading existing image to be edited or directly uploaded, DONE
+        - Server uploading and storage, DONE
+
+    - Admin panel
+        - Show all images on the site, allows us to see all images
+          quickly for moderation
+
+    - Change quote on menu bar every refresh
+
+    - make sidebar links stick to the bottom of the screen, DONE
+
+    - Mobile optimization
+
+    - Lazy loading images

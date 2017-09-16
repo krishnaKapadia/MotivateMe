@@ -1,0 +1,940 @@
+body {
+    /*margin-top: 0.5%;*/
+    height: 100%;
+    transition: background-color .5s;
+}
+
+ul {
+    list-style: none;
+    padding-left: 3%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff1d25;
+}
+
+.display {
+    float: right;
+}
+
+/*ACTUAL DISPLAY AREA*/
+.col-md-9 {
+    /*padding-bottom: 100%;
+    margin-bottom: -100%;*/
+    /*margin-left: 20%;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    /*display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal Content/Box clear: left; Cell Image*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size used to be 40*/
+}
+
+.modal-body {
+    margin: 12px;
+}
+
+.modal-content img {
+    margin: auto auto;
+    width: 100%;
+    height: 60%;
+}
+
+.foot {
+    position: absolute;
+    bottom: 5%;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    width: 100%;
+}
+
+
+/* Media querys for making modal images change size depending on viewport size */
+@media (max-width: 750px) {
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        /*padding: auto auto;*/
+        border: 1px solid #888;
+        width: 70%; /* Could be more or less, depending on screen size */
+    }
+
+}
+
+
+@media (min-width: 1250px) {
+
+    .modal-content {
+        width: 40%; /* Could be more or less, depending on screen size */
+    }
+
+}
+
+/*big.empire*/
+
+
+
+
+
+
+
+
+
+
+/* Sort by row css */
+
+.sortByRow {
+    padding-top: 2%;
+}
+
+.sortByRow ul li{
+    display: inline;
+
+}
+
+.sortByRow h4 {
+    display: inline;
+}
+
+
+.sortByRow h4 small{
+    margin-right: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: #3fa9f5;
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+/* Profile Sidebar css */
+
+#arrowBtn {
+    width: 2%;
+    margin-bottom: 3%;
+    position: fixed;
+    z-index: 99998;
+    right: 1%;
+}
+
+#closeSidebarBtn{
+    width: 20%;
+    padding-left: 8%;
+    position: absolute;
+    /*margin-bottom: 3%;*/
+    /*right: 1%;*/
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 1.5%;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-radius: 20px 0px 0px 20px;
+    /*border-left: 10px solid #ff1d25;*/
+}
+
+/* The navigation menu links */
+.sidenav h4 {
+   display: block;
+   transition: 0.3s;
+   color: #3fa9f5;
+}
+
+.sidenav .horizontal {
+    width: 70%;
+}
+
+.sidenav span {
+    display: inline-block;
+}
+
+.sidenav h4 {
+    font-size: 20px; /*1.8vw */
+    font-weight: 400;
+    color: black;
+    margin-bottom: 6%;
+    letter-spacing: 1px;
+    font-family: "Open Sans";
+}
+
+.sidenav li h4 {
+    font-family: "Open Sans";
+    color: #3fa9f5;
+    font-weight: 300;
+}
+
+.sidenav .title {
+    color: #3fa9f5;
+}
+
+#sideBarImage{
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.displayRowContainer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profileContainer {
+    /*background-color: rgb(46, 204, 113);*/
+    background: url("../images/coverDark.png") no-repeat top center fixed;
+    background-size: 100%;
+    border-radius: 0 0 10px 10px;
+    /*background-size: cover;*/
+    margin-top: -10px;
+    /*padding-top: -10px;*/
+    font-family: "Montserrat", sans-serif;
+    margin-left: -1.5%;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.profileContainer img {
+    padding-top: 4%;
+    width: 25%;
+    height: 25%;
+}
+
+.profileContainer .row {
+    width: inherit;
+}
+
+#profileImage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.savedMenu {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.savedMenu h4{
+    display: inline;
+    /*margin-right: 2%;*/
+}
+
+.savedMenu h4 small {
+    margin-top: 4px;
+    color: #3fa9f5;
+}
+
+line {
+    margin-left: 2%;
+    margin-right: 2%;
+    border-left: thick solid #ff0000;
+}
+
+.left {
+    float: left;
+}
+
+.savedMenu .row {
+    margin: 0 auto;
+    width: 20%;
+    /*width: 200px;*/
+}
+
+
+
+
+
+
+
+
+
+
+/*CREATION MODAL*/
+#imgTitleError {
+    margin-bottom: -10px;
+}
+
+canvas {
+    border-radius: 10px;
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+}
+
+canvas:hover {
+
+}
+
+.centerCanvas {
+    margin: auto;
+    display: block;
+}
+
+.container-center {
+    width: 70%;
+    /*background-color: black;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creatorMenu {
+    /*opacity: 0.4;*/
+}
+
+.opacity-slider {
+    -webkit-appearance: slider-vertical;
+    data-orientation="vertical";
+}
+
+#creation {
+    margin-top: -1%;
+}
+
+#uploadBtn {
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
+.cell {
+    width: 280px;
+    display:inline-block;
+    /*margin-right: 0%;*/
+    max-width: 320px;
+    /*float: none;*/
+    /*margin: 0 auto;*/
+    margin-left: 3%; /*30px*/
+    /*margin-bottom: 2%;*/
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.img {
+    /*max-height: 270px;
+    max-width: 270px;*/
+    background: 50% 50% no-repeat;
+    width: 268px;
+    height: 268px;
+    margin-left: -9px;
+    margin-bottom: 4px;
+}
+
+#heartBtn {
+    width: 33%;
+    text-align: right;
+}
+
+
+
+/* Image Cell icons */
+#iconRow {
+    padding-top: 2%;
+}
+
+#downloadIcon {
+    width: 23%;
+}
+
+#saveIcon {
+    width: 18%;
+}
+
+#heartIcon {
+    width: 23%;
+}
+
+.iconPadding {
+    padding-left: 7%;
+}
+
+.cellInner {
+    padding: 1%;
+}
+
+.cellInner h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; /* can use 100 or 300 */
+    padding: 0px;
+    padding-top: 4%;
+    margin: 0px;
+    letter-spacing: 0.2px;
+
+    margin-top: 4%;
+}
+
+.cellInner small {
+    font-family: "Open Sans", sans-serif;
+    padding: 0px;
+    /*padding-top: 1%;*/
+    margin: 0px;
+    /*margin-top: 1%;*/
+}
+
+
+.img-rounded {
+    border-radius: 10px;
+}
+
+.cell {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    /*text-align: left;*/
+    letter-spacing: 0.5px;
+}
+
+.cell p {
+    margin-bottom: 0;
+}
+
+.cell p small {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@media (min-width: 1500px) {
+
+    .cellUsers h3 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .cellUsers h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cell {
+        width: 350px;
+        display:inline-block;
+        width: 350px;
+        margin-left: 7%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .img {
+        background: 50% 50% no-repeat;
+        width: 350px;
+        height: 350px;
+        margin-left: -9px;
+        margin-bottom: 4px;
+    }
+
+
+
+}
+
+
+
+
+
+
+/* Utilities */
+.col-xs-6 .align-right {
+    width: 32px;
+    height: 32px;
+    background-image: url("images/heartOutline.png");
+}
+
+.small:hover {
+    transition: 0.5s;
+    background-image: url("images/heartFilled.png");
+}
+
+.horizontal {
+    border-color:  #f2f2f2;
+    border-width: 4px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.red {
+    background-color: #e85d97;
+    width: 100%;
+    padding: 100px;
+}
+
+.blue {
+    background-color: #5fa9ed;
+}
+
+.green {
+    background-color: #11dea6;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.right {
+    float: right;
+}
+
+
+
+
+
+
+
+
+/*Login Modal*/
+.remodal {
+    border-radius: 10px;
+}
+
+.menuContainer .avatar{
+    width: 100px;height: 100px;
+    margin: 10px auto 30px;
+    /*width: 80%;*/
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-color: gray;
+    background-size: cover;
+}
+
+.avatar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.avatarCircle {
+    width: 100px;height: 100px;
+    margin: 10px auto 30px;
+    /*width: 80%;*/
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-color: gray;
+    background-size: cover;
+}
+
+#output{
+    position: absolute;
+    width: 300px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+.form-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /*background-color: blue;*/
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #ccc;;
+    background: #fafafa;
+    transition:0.2s ease-in-out;
+}
+
+.form-box input:focus{
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 5px 5px;
+}
+
+.margin-top {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* LEFT MAIN MENU */
+.menu {
+    position: fixed;
+    height: 97%;
+
+}
+
+.title .center {
+    width: 90%;
+    border-bottom: 1px solid #ff1d25;
+    padding-top: 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; /* can use 100 or 300 */
+    /*font-size: 100%;*/
+}
+
+.quote {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20%;
+}
+
+.quote p {
+    /*font-size: 16px;*/
+    width: 90%;
+    font-weight: 300;
+    /*font-style: oblique;*/
+    text-align: center;
+}
+
+hr{
+    border-color: #ff1d25;
+}
+
+.menuContainer {
+    margin-left: 5%;
+    /*width: 80%;*/
+    height: 97%;
+    border-right: 4px solid #f2f2f2;
+
+    /*padding-bottom: 1%;*/
+}
+
+.menuList {
+    font-family: "Open Sans", sans-serif;
+    color: #3fa9f5;
+    list-style: none;
+    margin-bottom: 95%;
+    /*margin-top: 10%;*/
+}
+
+.menuList li h4 {
+    font-size: 20px; /*1.8vw */
+    font-weight: 300;
+    color: #3fa9f5;
+    margin-bottom: 6%;
+    letter-spacing: 1px;
+}
+
+.menuFooter {
+    margin-top: 100%;
+}
+
+
+/*Loader Css*/
+#escapingBallG{
+	position:relative;
+	width:110px;
+	height:34px;
+	/*margin:auto;*/
+}
+
+.escapingBallG{
+	background-color: rgb(255, 255, 255);
+	position:absolute;
+	top:0;
+	left:0;
+	width:30px;
+	height:30px;
+	border-radius:17px;
+		-o-border-radius:17px;
+		-ms-border-radius:17px;
+		-webkit-border-radius:17px;
+		-moz-border-radius:17px;
+
+	animation-name:bounce_escapingBallG;
+		-o-animation-name:bounce_escapingBallG;
+		-ms-animation-name:bounce_escapingBallG;
+		-webkit-animation-name:bounce_escapingBallG;
+		-moz-animation-name:bounce_escapingBallG;
+
+	animation-duration:1.165s;
+		-o-animation-duration:1.165s;
+		-ms-animation-duration:1.165s;
+		-webkit-animation-duration:1.165s;
+		-moz-animation-duration:1.165s;
+
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+
+	animation-timing-function:linear;
+		-o-animation-timing-function:linear;
+		-ms-animation-timing-function:linear;
+		-webkit-animation-timing-function:linear;
+		-moz-animation-timing-function:linear;
+
+	animation-delay:0s;
+		-o-animation-delay:0s;
+		-ms-animation-delay:0s;
+		-webkit-animation-delay:0s;
+		-moz-animation-delay:0s;
+
+	transform:scale(0.5, 1);
+		-o-transform:scale(0.5, 1);
+		-ms-transform:scale(0.5, 1);
+		-webkit-transform:scale(0.5, 1);
+		-moz-transform:scale(0.5, 1);
+}
+
+@keyframes bounce_escapingBallG{
+	0%{
+		left:0px;
+		transform:scale(0.5, 1);
+	}
+
+	25%{
+		left:33px;
+		transform:scale(1, 0.5);
+	}
+
+	50%{
+		left:82px;
+		transform:scale(0.5, 1);
+	}
+
+	75%{
+		left:33px;
+		transform:scale(1, 0.5);
+	}
+
+	100%{
+		left:0px;
+		transform:scale(0.5, 1);
+	}
+}
+
+@-o-keyframes bounce_escapingBallG{
+	0%{
+		left:0px;
+		-o-transform:scale(0.5, 1);
+	}
+
+	25%{
+		left:33px;
+		-o-transform:scale(1, 0.5);
+	}
+
+	50%{
+		left:82px;
+		-o-transform:scale(0.5, 1);
+	}
+
+	75%{
+		left:33px;
+		-o-transform:scale(1, 0.5);
+	}
+
+	100%{
+		left:0px;
+		-o-transform:scale(0.5, 1);
+	}
+}
+
+@-ms-keyframes bounce_escapingBallG{
+	0%{
+		left:0px;
+		-ms-transform:scale(0.5, 1);
+	}
+
+	25%{
+		left:33px;
+		-ms-transform:scale(1, 0.5);
+	}
+
+	50%{
+		left:82px;
+		-ms-transform:scale(0.5, 1);
+	}
+
+	75%{
+		left:33px;
+		-ms-transform:scale(1, 0.5);
+	}
+
+	100%{
+		left:0px;
+		-ms-transform:scale(0.5, 1);
+	}
+}
+
+@-webkit-keyframes bounce_escapingBallG{
+	0%{
+		left:0px;
+		-webkit-transform:scale(0.5, 1);
+	}
+
+	25%{
+		left:33px;
+		-webkit-transform:scale(1, 0.5);
+	}
+
+	50%{
+		left:82px;
+		-webkit-transform:scale(0.5, 1);
+	}
+
+	75%{
+		left:33px;
+		-webkit-transform:scale(1, 0.5);
+	}
+
+	100%{
+		left:0px;
+		-webkit-transform:scale(0.5, 1);
+	}
+}
+
+@-moz-keyframes bounce_escapingBallG{
+	0%{
+		left:0px;
+		-moz-transform:scale(0.5, 1);
+	}
+
+	25%{
+		left:33px;
+		-moz-transform:scale(1, 0.5);
+	}
+
+	50%{
+		left:82px;
+		-moz-transform:scale(0.5, 1);
+	}
+
+	75%{
+		left:33px;
+		-moz-transform:scale(1, 0.5);
+	}
+
+	100%{
+		left:0px;
+		-moz-transform:scale(0.5, 1);
+	}
+}
+
+
+
+/*Utility Casses*/
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: center;
+}
